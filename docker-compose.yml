@@ -1,0 +1,56 @@
+version: "3.8"
+services:
+  mysql:
+    image: 'mysql:8.0'
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'gaius155'
+      MYSQL_DATABASE: 'area'
+      MYSQL_USER: 'root'
+
+  myserver:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    volumes:
+      - /app/node_modules
+      - ./server:/app
+    ports:
+      - '8080:8080'
+    expose:
+      - '8080'
+
+  myapp:
+    build:
+      context: ./mobile
+      dockerfile: Dockerfile
+    depends_on:
+      - myserver
+    volumes:
+      - /app/node_modules
+      - ./mobile:/app
+      - apk:/usr/src/app/apk/:rw
+  
+  myweb:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8081'
+    expose:
+      - '8081'
+    depends_on:
+      - myserver
+    volumes:
+      - /app/node_modules
+      - ./web:/app
+
+volumes:
+  apk:

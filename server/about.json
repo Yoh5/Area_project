@@ -1,0 +1,202 @@
+{
+    "client": {
+      "host": "ip"
+    },
+    "server": {
+      "current_time": 1531680780,
+      "services": [
+        {
+          "name": "Github",
+          "actions": [
+            {
+              "name": "on_push",
+              "description": "A push was made in a repository"
+            },
+            {
+              "name": "on_pull_request",
+              "description": "A pull request was made"
+            },
+            {
+              "name": "repository_is_created_on_Github",
+              "description": "The user create a repo on github"
+            },
+            {
+                "name": "repository_is_deleted_on_Github",
+                "description": "The user delete a repo on github"
+            },
+            {
+                "name": "repository_is_deleted_on_Github",
+                "description": "The user delete a repo on github"
+            },
+            {
+                "name": "issue_is_created_on_Github",
+                "description": "An issue is created on Github"
+            },
+            {
+                "name": "issue_is_edited_on_Github",
+                "description":"An issue is edited on Github"
+            },
+            {
+                "name": "issue_is_closed_on_Github",
+                "description": "An issue was closed on Github"
+            },
+            {
+                "name": "new_branch_was_created_on_Github",
+                "description": "a new branch was created"
+            },
+            {
+                "name": "a_branch_is_edited",
+                "description": "A branch was edited"
+            },
+            {
+                "name": "a_branch_is_closed",
+                "description": "a branch was closed"
+            },
+            {
+                "name": "a_repository_was_created",
+                "description": "The user create a repo on github"
+            },
+            {
+                "name": "workflow_is_running",
+                "description": "The user create a workflow"
+            },
+            {
+                "name": "repository_is_closed_on_Github",
+                "description": "the user closed a repository"
+            }
+          ],
+          "reactions": [
+            {
+              "name": "mail_on_push",
+              "description": "Get an email notification on push"
+            },
+            {
+                "name": "mail_on_pull",
+                "description": "Get an email notification when the pull request is accepted or rejected."
+            },
+            {
+                "name": "new_board_on_trello",
+                "description": "Create a new board on Trello when an repository is created on Github"
+            },
+            {
+                "name": "delete_board_on_trello",
+                "description": "Delete the board on Trello when the repository is delete on Github"
+            },
+            {
+                "name": "add_trello_card_in_todo_list",
+                "description": "Add a Trello Card in To Do List when an issue is created on Github"
+            },
+            {
+                "name": "Move_a_Trello_Card_to_Doing_List",
+                "description": "Move a Trello Card to Doing List when an issue is edited on Github"
+            },
+            {
+                "name": "Move_a_Trello_Card_to_Done_List",
+                "description": "Move a Trello Card to Done List when an issue is closed on Github"
+            },
+            {
+                "name": "add_trello_card_in_todo_list",
+                "description": "Add a Trello Card in To Do List when a new branch is created on Github"
+            },
+            {
+                "name": "move_a_Trello_Card_to_Doing_List",
+                "description": "Move a Trello Card to Doing List when a branch is edited on Github"
+            },
+            {
+                "name": "move_a_Trello_Card_to_Done_List",
+                "description": "Move a Trello Card to Done List when a branch is closed on Github"
+            },
+            {
+                "name": "get_an_email_notification",
+                "description": "Get an email notification when the repository is created"
+            },
+            {
+                "name": "get_an_email_notification",
+                "description": "Get an email notification when a workflow is running"
+            },
+            {
+                "name": "get_an_email_notification",
+                "description": "Get an email notification when a repository is closed"
+            },
+            {
+                "name": "get_an_email_notification",
+                "description": "Get an email notification when a star is created on repository"
+            },
+            {
+                "name": "get_an_email_notification",
+                "description": "Get an email notification when a star is deleted on repository"
+            },
+            {
+                "name": "star_is_created_on_repository",
+                "description": "A user have starred a repository"
+            },
+            {
+                "name": "star_is_deleted_on_repository",
+                "description": "A user deletes star on a repository"
+            }
+          ]
+        },
+        {
+            "name": "Weather",
+            "actions" :[
+                {
+                    "name":"weather_of_the_day",
+                    "description": "Weather of the day"
+                }
+            ],
+            "reactions":[
+                {
+                    "name": "get_an_email_notification",
+                    "description": "Get an email notification about Meteo of the day"
+                }
+            ]
+        },
+        {
+            "name": "News",
+            "actions":[
+                {
+                    "name": "news_of_the_day",
+                    "description": "News of the day was posted"
+                }
+            ],
+            "reactions":[
+                {
+                    "name": "get_an_email_notification",
+                    "description": "Get an email notification about News of the day"
+                }
+            ]
+        },
+        {
+            "name": "Bible versey",
+            "actions":[
+                {
+                    "name": "Bible versey",
+                    "description": "subscribe to bible versey"
+                }
+            ],
+            "reactions":[
+                {
+                    "name": "receive_an_email",
+                    "description": "Receive an email from Bible versey every day"
+                }
+            ]
+        },
+        {
+            "name": "Blagues API",
+            "actions":[
+                {
+                    "name": "some jokes was posted",
+                    "description": "subscribe to tech jokes daily"
+                }
+            ],
+            "reactions":[
+                {
+                    "name": "receive a tech joke-email",
+                    "description": "Receive a tech joke e-mail every day"
+                }
+            ]
+        }
+      ]
+    }
+  }
+  

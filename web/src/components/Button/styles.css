@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #505DD0;
+    border: 0;
+    padding: 1em;
+    width: 100%;
+    border-radius: 0.5em;
+    /* animation: 1s; */
+    /* animation-duration: 4s; */
+
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+    scale: 1.05;
+    animation: 1s;
+    cursor: pointer;
+}
+
+.buttonText {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}

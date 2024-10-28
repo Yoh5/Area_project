@@ -1,0 +1,27 @@
+.inputBox {
+}
+
+.inputBox .inputBar {
+  width: 80vw;
+  max-width: 490px;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  transition: .3s ease;
+}
+
+.inputBox .inputBar::placeholder {
+  color: #9e9ea7;
+}
+
+.inputBox .inputBar:focus,
+.inputBox .inputBar:hover {
+  outline: none;
+  border-color: #505DD0;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px #adb3e6;
+}

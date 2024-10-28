@@ -1,0 +1,83 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em 3em;
+  color: white;
+  background-color: #505DD0;
+}
+
+
+.navBar .titleBox {
+  display: flex;
+  align-items: center;
+}
+
+.navBar .titleBox .areaIcon {
+  height: 4em;
+}
+
+.navBar .titleBox .titleIcon {
+  height: 3em;
+}
+
+
+.navBar nav {
+  display: flex;
+}
+
+.navBar nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 24em;
+}
+
+.navBar nav ul a {
+  font-family: Cambria;
+  z-index: 1000;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.navBar nav ul .textLink::after,
+.navBar nav ul .textLink::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  transition: 0.5s;
+}
+
+.navBar nav ul .textLink::before {
+  margin-left: auto;
+}
+
+.navBar nav ul .textLink:hover::after,
+.navBar nav ul .textLink:hover::before {
+  width: 100%;
+}
+
+.navBar nav ul a li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+.navBar nav ul li img {
+  display: block;
+  width: 3em;
+  height: 3em;
+  border: 1px solid #505DD0;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.navBar nav ul img:hover {
+  transform: scale(1.05);
+}

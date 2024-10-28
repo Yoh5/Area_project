@@ -1,0 +1,96 @@
+.signUpPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 5em 0 5em;
+}
+
+.signUpPage > div {
+    margin: 0.5em 0.5em;
+    width: 100%;
+}
+
+.signUpPage .inputStyle {
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.signUpPage > div label {
+    color: #505DD0;
+}
+
+.signUpPage .firstName {
+    margin-right: 1em;
+}
+
+.signUpPage .checkbox {
+    flex-direction: row;
+}
+
+.signUpPage .checkbox .useTermInput {
+    margin-right: 1em;
+    background-color: red;
+}
+
+.signUpPage .registerNow {
+    background-color: #505DD0;
+    color: white;
+    font-size: 16px;
+    padding: 0.7em;
+    margin: 1em 0;
+}
+
+.signUpPage .errorMessage {
+    color: red;
+}
+
+.signUpPage .signInLink {
+    font-size: 16px;
+    color: #00000066;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tokenPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 5em 0 5em;
+}
+
+.tokenPage .checkButton {
+    background-color: #505DD0;
+    width: 13em;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    box-shadow: 10em 10em 10em;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.tokenPage .backToRegister {
+    color: #505DD0;
+}
+
+.tokenPage .inputStyle {
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.tokenPage .errorMessage {
+    margin: 1em 0;
+    color: red;
+}

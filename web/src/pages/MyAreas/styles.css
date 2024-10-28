@@ -1,0 +1,94 @@
+.areaPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.areaPage .principalView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.areaPage .principalView h1 {
+  font-size: 2.5em;
+  margin: 1em 0;
+}
+
+.areaPage .principalView .searchBar {
+  line-height: 28px;
+  width: 490px;
+  height: 40px;
+
+  padding: 0 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  transition: .3s ease;
+}
+ 
+
+.areaPage .principalView .input::placeholder {
+  color: #9e9ea7;
+}
+ 
+.areaPage .principalView .input:focus,
+.areaPage .principalView .input:hover {
+  outline: none;
+  border-color: #505DD0;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px #adb3e6;
+}
+
+
+
+.areaPage .principalView .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em 0em;
+}
+
+.areaPage .principalView .box-container .areaBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 15em;
+  height: 15em;
+  margin: 1em;
+  cursor: pointer;
+  border-radius: 1em;
+  background-color: red;
+  box-shadow: 0 0 20px black;
+  transition: transform 3s ease;
+}
+
+.areaPage .principalView .box-container .areaBox:hover {
+  scale: 1.05;
+  transition: .3s ease;
+}
+
+.areaPage .principalView .box-container .areaTitleBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2px 5px;
+}
+
+.areaPage .principalView .box-container .areaBox .icon {
+  font-size: 2em;
+  color: white;
+  border-radius: 12%;
+  margin: 5px 2px;
+}
+
+.areaPage .principalView .box-container .areaBox .areaDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}

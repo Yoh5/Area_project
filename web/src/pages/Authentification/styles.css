@@ -1,0 +1,63 @@
+@font-face
+{
+    font-family: 'AlfaSlabOne';
+    src: url('../../assets/fonts/AlfaSlabOne-Regular.ttf') format('tff')
+}
+
+@font-face
+{
+    font-family: 'MADEMountain';
+    src: url('../../assets/fonts/MADEMountain-Regular.otf') format('otf')
+}
+
+.registerPage {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../assets/loginbackground.jpg");
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.registerPage .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    padding-bottom: 10vh;
+    background-color: rgba(80, 93, 208, 1);
+}
+
+.registerPage .header .areaIcon {
+    width: 6em;
+}
+
+.registerPage .header .titleIcon {
+    width: 12em;
+}
+
+.registerPage .inputPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 4em 0;
+    flex: 1;
+    height: 100%;
+    background-color: #f8f8f8;
+    overflow: auto;
+}
+
+.registerPage .inputPart h1 {
+    font-weight: bold;
+    color: #505DD0;
+}
+
+@media screen and (max-width: 600px) {
+    .registerPage .header {
+        display: none;
+    }
+}

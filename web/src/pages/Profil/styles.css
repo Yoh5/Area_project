@@ -1,0 +1,21 @@
+.profilPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.profilPage .principalView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 4em;
+  width: 20em;
+}
+
+.profilPage .principalView img {
+  width: 12em;
+  height: 12em;
+  border-radius: 1em;
+  
+}

@@ -1,0 +1,37 @@
+.areaBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 15em;
+  height: 15em;
+  margin: 1em;
+  border-radius: 1em;
+  background-color: red;
+  box-shadow: 0 0 20px black;
+  transition: transform 3s ease;
+}
+
+.areaBox .areaTitleBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2px 5px;
+  border-radius: 1em;
+  background-color: #505DD0;
+}
+
+.areaBox .areaTitleIcons .icon {
+  font-size: 2em;
+  color: white;
+  border-radius: 12%;
+  margin: 5px 2px;
+}
+
+.areaBox .areaDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 1em;
+  font-size: 20px;
+}

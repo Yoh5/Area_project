@@ -1,0 +1,14 @@
+.inputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputStyle {
+    background-color: #e8e9ee;
+    padding: 0.8em 1em;
+    border: 0;
+}
+
+.inputStyle:focus {
+    outline: none;
+}

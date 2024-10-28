@@ -1,0 +1,15 @@
+.loadingPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #505DD0;
+    width: 100%;
+    height: 100%;
+}
+
+.loadingPage .areaIcon {
+    width: 5;
+    height: 5;
+}
